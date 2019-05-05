@@ -12,7 +12,7 @@
       src="bower_components/angular/angular.js"
     ></script>
     <script type="text/javascript" src="scripts/app.js"></script>
-    <link rel="stylesheet" href="styles/masonry.css" />
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body ng-controller="MainCtrl">
     <div class="header">
@@ -28,11 +28,11 @@
     </div>
 
     <div class="container main">
-      <form ng-submit="getData(searchField)">
+      <form ng-submit="getData(searchTerm)">
         <div class="row" style="height: 75px; width: 100%;">
           <input
             type="text"
-            data-ng-model="searchField"
+            data-ng-model="searchTerm"
             placeholder="Type a keyword to search on Flickr and hit enter"
             class="form-control input-lg"
           />
